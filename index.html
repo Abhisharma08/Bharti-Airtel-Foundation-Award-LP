@@ -115,6 +115,14 @@ section{padding:84px 0;scroll-margin-top:10px}
 .step::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .6s ease .2s}
 .step.in::before{transform:none}
 
+/* Guidelines strip */
+.guide{padding:0 0 84px;background:#fff}
+.guide .next{margin-top:48px}
+.guide .wrap{padding-top:0;padding-bottom:0}
+.strip{display:flex;flex-direction:column;gap:18px;align-items:flex-start;justify-content:space-between;background:linear-gradient(100deg,var(--cream),#fbd6d3);border-radius:22px;padding:30px 28px}
+.strip p{font-size:clamp(17px,2vw,21px);font-weight:700;max-width:40ch}
+@media (min-width:760px){.strip{flex-direction:row;align-items:center;padding:36px 44px}}
+
 /* 5. Awards */
 .awards .head{text-align:center;max-width:720px;margin:0 auto 44px}
 .prizes{display:grid;gap:18px}
@@ -137,6 +145,27 @@ section{padding:84px 0;scroll-margin-top:10px}
 .perk .ic svg{width:22px;height:22px}
 .perk p{font-size:16px;color:var(--ink-2)}
 .perk.top p{color:var(--ink);font-weight:700}
+
+/* 6. Apply */
+.apply{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.apply::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(228,0,0,.45),transparent 70%);right:-160px;top:-200px;pointer-events:none}
+.apply .wrap{position:relative;display:grid;gap:30px;align-items:center}
+@media (min-width:900px){.apply .wrap{grid-template-columns:1fr auto;gap:48px}}
+.apply .eyebrow{color:#ff8a8a}
+.apply .h2{color:#fff}
+.apply .lead{color:#c9c9d4;margin-top:12px}
+.stores{display:flex;flex-wrap:wrap;gap:12px}
+.store{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;text-decoration:none;border:1px solid #3a3a46;border-radius:12px;padding:9px 16px 9px 12px;min-width:170px;transition:border-color .2s,transform .15s}
+.store:hover{border-color:#fff;transform:translateY(-2px)}
+.store svg{width:26px;height:26px;flex:none}
+.store small{display:block;font-size:11px;line-height:1.1;opacity:.85}
+.store b{display:block;font-size:18px;line-height:1.15;font-weight:600}
+
+/* 7. Closing */
+.closing{text-align:center;background:var(--soft)}
+.closing blockquote{margin:0 auto;max-width:900px;font-size:clamp(22px,3.2vw,34px);font-weight:750;line-height:1.35;letter-spacing:-.015em}
+.closing blockquote span{color:var(--red)}
+.closing .q{width:44px;height:44px;margin:0 auto 18px;color:var(--red)}
 
 /* Footer */
 footer{border-top:1px solid var(--line);padding:30px 0 110px}
@@ -193,6 +222,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <li><a href="#eligibility"><b>Who can apply</b><i></i></a></li>
     <li><a href="#criteria"><b>What we look for</b><i></i></a></li>
     <li><a href="#about"><b>About</b><i></i></a></li>
+    <li><a href="#apply"><b>Apply</b><i></i></a></li>
   </ul>
 </nav>
 
@@ -296,8 +326,18 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <article class="step rv d1"><span class="n" aria-hidden="true">04</span><h3>Positive impact within schools and communities</h3></article>
       </div>
     </div>
-    <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
   </section>
+
+  <div class="guide">
+    <div class="wrap">
+      <div class="strip rv">
+        <p>For detailed eligibility criteria, evaluation parameters, and application guidelines</p>
+        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Click Here<span class="sr"> to view detailed eligibility criteria and application guidelines</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+      <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
+  </div>
 
   <!-- 5 -->
   <section id="about" class="about">
@@ -315,6 +355,35 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </div>
     </div>
   </section>
+
+  <!-- 6 -->
+  <section id="apply" class="apply">
+    <div class="wrap">
+      <div class="rv">
+        <div class="eyebrow">06 · Apply now</div>
+        <h2 class="h2">Apply through TheTeacherApp</h2>
+      </div>
+      <div class="stores rv d1">
+        <a class="store" href="#" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 24 24"><path fill="#00d7fe" d="M3.6 2.2 13.4 12l-9.8 9.8c-.4-.2-.6-.7-.6-1.2V3.4c0-.5.2-1 .6-1.2z"/><path fill="#ffce00" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c1-.6 1-1.8 0-2.4z"/><path fill="#ff3a44" d="M13.4 12 3.6 21.8c.4.3 1 .3 1.6 0l11.6-6.4z"/><path fill="#00f076" d="M3.6 2.2c.4-.3 1-.3 1.6 0l11.6 6.4-3.4 3.4z"/></svg>
+          <span><small>GET IT ON</small><b>Google Play</b></span></a>
+        <a class="store" href="#" target="_blank" rel="noopener" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9s-2-.9-3.4-.9C5.9 6.8 4.3 7.8 3.4 9.4c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.6 1-1.4 1.4-2.9 1.4-3-.1 0-2.7-1-2.7-4.3zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>
+          <span><small>Download on the</small><b>App Store</b></span></a>
+        <a class="store" href="#" target="_blank" rel="noopener" aria-label="Explore web version">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.8 3 2.8 17 0 20M12 2c-2.8 3-2.8 17 0 20"/></svg>
+          <span><small>Explore</small><b>web version</b></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="closing" id="closing">
+    <div class="wrap rv">
+      <svg class="q" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4z"/></svg>
+      <blockquote>Great teachers are found in every classroom, every community, and every corner of India. <span>Let's come together to identify, celebrate, and learn from the educators who are shaping the nation's future.</span></blockquote>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -328,7 +397,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </footer>
 
 <div class="dock" id="dock" role="complementary" aria-label="Apply shortcut">
-  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">5 sections · takes 2 minutes</span></p>
+  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">6 sections · takes 2 minutes</span></p>
   <a class="btn btn-red" href="#" data-cta="apply">Apply Now</a>
 </div>
 
@@ -339,7 +408,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   [].forEach.call(document.querySelectorAll('[data-cta]'),function(a){var u=LINKS[a.getAttribute('data-cta')];if(u&&u!=='#'){a.href=u;a.target='_blank';a.rel='noopener'}});
 
   var bar=document.getElementById('bar'),dock=document.getElementById('dock'),txt=document.getElementById('dockTxt');
-  var ids=['participate','awards','eligibility','criteria','about'],n=ids.length;
+  var ids=['participate','awards','eligibility','criteria','about','apply'],n=ids.length;
   var secs=ids.map(function(i){return document.getElementById(i)});
   var links=[].slice.call(document.querySelectorAll('#rail a'));
   var first=secs[0],finalCta=document.getElementById('final-cta'),ticking=false;
@@ -354,7 +423,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var left=n-1-cur;
     txt.textContent=cur<0?n+' sections · takes 2 minutes':left>0?'Section '+(cur+1)+' of '+n+' · '+left+' to go':'You’re all set — apply now';
     dock.classList.toggle('show',first.getBoundingClientRect().bottom<0);
-    dock.classList.toggle('hide',vis(finalCta));
+    dock.classList.toggle('hide',vis(finalCta)||vis(document.getElementById('apply')));
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
   addEventListener('resize',update);update();
