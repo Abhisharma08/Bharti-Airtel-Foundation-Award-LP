@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teacher Excellence Awards 2027 | Bharti Airtel Foundation</title>
-<meta name="description" content="Bharti Airtel Foundation Teacher Excellence Awards 2027 – Shaping Lives. Celebrating exceptional educators across India. Apply or nominate through TheTeacherApp.">
+<meta name="description" content="Bharti Airtel Foundation Teacher Excellence Awards 2027 – Shaping Lives. Join us in recognising the educators who are shaping lives and building India’s future. Apply now or nominate an exceptional teacher.">
 <meta name="theme-color" content="#e40000">
 <link rel="canonical" href="https://bharti-airtel-foundation-award-lp.pages.dev/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e40000'/%3E%3Cpath d='M10 22l6-12 6 12M12.5 17h7' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -70,37 +70,27 @@ section{padding:84px 0;scroll-margin-top:10px}
 .next svg{width:16px;height:16px;animation:bob 1.8s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(3px)}}
 
-/* 1. About */
-.about .grid{display:grid;gap:28px}
-.about .h2{max-width:14ch}
-.about .lead strong{color:var(--ink)}
-.pillars{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.pillars span{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--soft);border:1px solid var(--line)}
-@media (min-width:900px){.about .grid{grid-template-columns:5fr 7fr;gap:64px;align-items:start}}
-
-/* 2. Participate */
+/* 1. Participate */
 .participate{background:var(--soft)}
-.participate .head{text-align:center;max-width:720px;margin:0 auto 44px}
-.cards{display:grid;gap:18px}
-.cards{max-width:900px;margin:0 auto}
+.participate .head{text-align:center;max-width:820px;margin:0 auto 44px}
+.participate .head .lead{margin-top:16px}
+.cards{display:grid;gap:18px;max-width:960px;margin:0 auto}
 @media (min-width:720px){.cards{grid-template-columns:1fr 1fr;gap:22px}}
-.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,20,28,.08);border-color:#f3c2c2}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:18px;transition:box-shadow .2s,border-color .2s}
+.card:hover{box-shadow:0 18px 40px rgba(20,20,28,.08);border-color:#f3c2c2}
 .card .ic{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;background:var(--tint);color:var(--red)}
 .card .ic svg{width:28px;height:28px}
-.card h3{font-size:20px;font-weight:750;display:flex;align-items:center;gap:8px}
-.card h3 svg{width:18px;height:18px;color:var(--red);transition:transform .2s}
-.card:hover h3 svg{transform:translateX(4px)}
-.card p{color:var(--ink-2);font-size:16px}
+.card h3{font-size:clamp(20px,2.2vw,24px);font-weight:750;line-height:1.3}
 .card.feature{background:var(--ink);border-color:var(--ink);color:#fff}
-.card.feature p{color:#c9c9d4}
 .card.feature .ic{background:var(--red);color:#fff}
-.card.feature h3 svg{color:#ff8a8a}
 .card-btn{margin-top:auto;align-self:flex-start}
-.card .card-btn svg{width:18px;height:18px;color:inherit}
-.cards .card p{margin-bottom:8px}
-div.card:hover{transform:none;box-shadow:0 18px 40px rgba(20,20,28,.08)}
 .card.feature .card-btn{box-shadow:none}
+
+/* 5. About */
+.about .grid{display:grid;gap:28px}
+.about .h2{max-width:14ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+@media (min-width:900px){.about .grid{grid-template-columns:5fr 7fr;gap:64px;align-items:start}}
 
 /* 3. Eligibility */
 .elig .box{display:grid;gap:36px;align-items:center}
@@ -112,23 +102,18 @@ div.card:hover{transform:none;box-shadow:0 18px 40px rgba(20,20,28,.08)}
 .tick svg{width:16px;height:16px}
 
 /* 4. Criteria */
-.criteria{background:linear-gradient(180deg,var(--soft),#fff)}
-.criteria .head{max-width:720px;margin-bottom:44px}
+.elig,.about{background:var(--soft)}
+.criteria{background:#fff}
+.criteria .head{max-width:720px;margin-bottom:40px}
+.criteria .head .lead{margin-top:14px}
 .steps{display:grid;gap:18px;counter-reset:s}
 @media (min-width:760px){.steps{grid-template-columns:1fr 1fr;gap:22px}}
-.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px 28px;overflow:hidden}
-.step .n{display:block;font-size:52px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px #e3a3a3;letter-spacing:-.04em;margin-bottom:14px}
-.step h3{font-size:19px;font-weight:750;margin-bottom:10px}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 26px 26px 28px;overflow:hidden;display:flex;align-items:center;gap:20px}
+.step .n{display:block;font-size:52px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px #e3a3a3;letter-spacing:-.04em;flex:none}
+.step h3{font-size:19px;font-weight:700;line-height:1.35}
 .step p{color:var(--ink-2);font-size:16px}
 .step::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .6s ease .2s}
 .step.in::before{transform:none}
-
-/* Guidelines strip */
-.guide{padding:0}
-.guide .wrap{padding-top:0;padding-bottom:0}
-.strip{display:flex;flex-direction:column;gap:18px;align-items:flex-start;justify-content:space-between;background:linear-gradient(100deg,var(--cream),#fbd6d3);border-radius:22px;padding:30px 28px}
-.strip p{font-size:clamp(17px,2vw,21px);font-weight:700;max-width:40ch}
-@media (min-width:760px){.strip{flex-direction:row;align-items:center;padding:36px 44px}}
 
 /* 5. Awards */
 .awards .head{text-align:center;max-width:720px;margin:0 auto 44px}
@@ -142,6 +127,7 @@ div.card:hover{transform:none;box-shadow:0 18px 40px rgba(20,20,28,.08)}
 .prize .ic svg{width:30px;height:30px}
 .amt{font-size:clamp(44px,6vw,64px);font-weight:850;letter-spacing:-.03em;line-height:1.05;color:var(--red)}
 .prize.gold .amt{color:#fff}
+.amt small{font-size:.38em;font-weight:700;letter-spacing:0;margin-left:4px}
 .prize .who{margin-top:8px;font-size:17px;font-weight:600;color:var(--muted)}
 .prize.gold .who{color:#fff}
 .perks{margin-top:22px;display:grid;gap:14px}
@@ -152,36 +138,18 @@ div.card:hover{transform:none;box-shadow:0 18px 40px rgba(20,20,28,.08)}
 .perk p{font-size:16px;color:var(--ink-2)}
 .perk.top p{color:var(--ink);font-weight:700}
 
-/* 6. Apply */
-.apply{background:var(--ink);color:#fff;position:relative;overflow:hidden}
-.apply::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(228,0,0,.45),transparent 70%);right:-160px;top:-200px;pointer-events:none}
-.apply .wrap{position:relative;display:grid;gap:30px;align-items:center}
-@media (min-width:900px){.apply .wrap{grid-template-columns:1fr auto;gap:48px}}
-.apply .eyebrow{color:#ff8a8a}
-.apply .h2{color:#fff}
-.apply .lead{color:#c9c9d4;margin-top:12px}
-.stores{display:flex;flex-wrap:wrap;gap:12px}
-.store{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;text-decoration:none;border:1px solid #3a3a46;border-radius:12px;padding:9px 16px 9px 12px;min-width:170px;transition:border-color .2s,transform .15s}
-.store:hover{border-color:#fff;transform:translateY(-2px)}
-.store svg{width:26px;height:26px;flex:none}
-.store small{display:block;font-size:11px;line-height:1.1;opacity:.85}
-.store b{display:block;font-size:18px;line-height:1.15;font-weight:600}
-
-/* 7. Closing */
-.closing{text-align:center;background:var(--soft)}
-.closing blockquote{margin:0 auto;max-width:900px;font-size:clamp(22px,3.2vw,34px);font-weight:750;line-height:1.35;letter-spacing:-.015em}
-.closing blockquote span{color:var(--red)}
-.closing .q{width:44px;height:44px;margin:0 auto 18px;color:var(--red)}
-
 /* Footer */
 footer{border-top:1px solid var(--line);padding:30px 0 110px}
 footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
 .ey{display:flex;align-items:center;gap:14px;font-weight:700;font-size:18px}
 .ey img{width:44px;height:44px}
 .ey small{display:block;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
-.mail{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border:1.5px solid var(--ink);border-radius:999px;padding:12px 20px;font-size:15px}
-.mail:hover{background:var(--ink);color:#fff}
-.mail svg{width:18px;height:18px}
+.contact{display:flex;align-items:center;gap:14px;min-width:0}
+.contact .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--tint);color:var(--red);display:grid;place-items:center}
+.contact .ic svg{width:22px;height:22px}
+.contact p{font-size:14px;color:var(--muted);min-width:0}
+.contact a{display:block;font-size:16px;font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.contact a:hover{color:var(--red);text-decoration:underline}
 @media (min-width:900px){footer{padding-bottom:30px}}
 
 /* Sticky mobile CTA */
@@ -207,7 +175,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 @media (max-width:520px){
   body{font-size:16px}
   section{padding:64px 0}
-  .card,.step{padding:24px 22px}
+  .card{padding:24px 22px}
+  .step{padding:22px 20px}
+  .step .n{font-size:40px}
+  .ctas .btn{flex:1 1 100%;justify-content:center}
   .hero-bar .btn{width:100%;justify-content:center}
 }
 </style>
@@ -217,12 +188,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
 <nav aria-label="Page sections">
   <ul class="rail" id="rail">
-    <li><a href="#about"><b>About</b><i></i></a></li>
-    <li><a href="#participate"><b>Participate</b><i></i></a></li>
+    <li><a href="#participate"><b>Get involved</b><i></i></a></li>
+    <li><a href="#awards"><b>Awards</b><i></i></a></li>
     <li><a href="#eligibility"><b>Who can apply</b><i></i></a></li>
     <li><a href="#criteria"><b>What we look for</b><i></i></a></li>
-    <li><a href="#awards"><b>Awards</b><i></i></a></li>
-    <li><a href="#apply"><b>Apply</b><i></i></a></li>
+    <li><a href="#about"><b>About</b><i></i></a></li>
   </ul>
 </nav>
 
@@ -234,7 +204,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   </picture>
   <div class="hero-bar">
     <div class="wrap">
-      <p><strong>Teacher Excellence Awards 2027</strong> · Apply or nominate through TheTeacherApp</p>
+      <p><strong>Teacher Excellence Awards 2027</strong> · Shaping Lives</p>
       <a class="btn btn-red" href="#participate">Start here
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
     </div>
@@ -243,40 +213,53 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
 <main>
   <!-- 1 -->
-  <section id="about" class="about">
-    <div class="wrap grid">
-      <div class="rv">
-        <div class="eyebrow">01 · About the awards</div>
-        <h2 class="h2">Recognising India’s Finest <em>Educators</em></h2>
-      </div>
-      <div class="rv d1">
-        <p class="lead">The <strong>Teacher Excellence Awards</strong>, instituted by the <strong>Bharti Airtel Foundation</strong>, celebrate exceptional educators who are transforming teaching and learning through innovation, leadership, and a deep commitment to student success. A rigorous selection process, led by an eminent jury at both the regional and national levels, will ensure the most impactful teachers are recognised.</p>
-        <div class="pillars"><span>Innovation</span><span>Leadership</span><span>Student success</span><span>Regional &amp; national jury</span></div>
-      </div>
-    </div>
-    <div class="next"><a href="#participate">Choose how to participate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
-  </section>
-
-  <!-- 2 -->
   <section id="participate" class="participate">
     <div class="wrap">
       <div class="head rv">
-        <div class="eyebrow">02 · Get involved</div>
-        <h2 class="h2">Choose How You Would Like to <em>Participate</em></h2>
+        <div class="eyebrow">01 · Get involved</div>
+        <h2 class="h2">The next great educator we celebrate could be <em>you</em>. Or someone you know.</h2>
+        <p class="lead">Join us in recognising the educators who are shaping lives and building India’s future.</p>
       </div>
       <div class="cards">
         <div class="card feature rv">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="12" rx="2"/><path d="M7 21l5-6 5 6M7 8h6M7 11h10"/></svg></span>
-          <h3>I am a Teacher</h3>
-          <p>If you are creating meaningful impact in your classroom and community, we invite you to share your journey and apply for the Teacher Excellence Awards.</p>
-          <a class="btn btn-red card-btn" href="#apply">Apply Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <h3>Are you an educator creating lasting impact?</h3>
+          <a class="btn btn-red card-btn" href="#" data-cta="apply">Apply Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div class="card rv d1">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M19 8v6M16 11h6"/></svg></span>
-          <h3>Know an Exceptional Teacher</h3>
-          <p>Help us discover educators who are making a difference. Refer a teacher whose work deserves national recognition, and we will invite them to apply.</p>
-          <a class="btn btn-line card-btn" href="#apply">Nominate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <h3>Know an exceptional teacher who deserves national recognition?</h3>
+          <a class="btn btn-line card-btn" href="#" data-cta="nominate">Nominate a Teacher <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
+      </div>
+    </div>
+    <div class="next"><a href="#awards">See the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
+  </section>
+
+  <!-- 2 -->
+  <section id="awards" class="awards">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="eyebrow">02 · Rewards</div>
+        <h2 class="h2">Awards &amp; <em>Recognition</em></h2>
+      </div>
+      <div class="prizes">
+        <div class="prize gold rv">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+          <div class="amt">₹10 lakh</div>
+          <div class="who">National Winner</div>
+        </div>
+        <div class="prize rv d1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+          <div class="amt">₹5 lakh<small>each</small></div>
+          <div class="who">Four Regional Winners</div>
+        </div>
+      </div>
+      <div class="perks">
+        <div class="perk top rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6.5 7 .8-5.2 4.7 1.5 7L12 17.5 5.7 21l1.5-7L2 9.3l7-.8z"/></svg></span><p>National-level recognition at the prestigious CONVOKE platform</p></div>
+        <div class="perk rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.8 3 2.8 17 0 20M12 2c-2.8 3-2.8 17 0 20"/></svg></span><p>Fully sponsored international exposure visit to Bhutan to study the Bhutan Baccalaureate</p></div>
+        <div class="perk rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><p>Opportunities for mentorship, thought leadership, publication, and engagement through TheTeacherApp</p></div>
+        <div class="perk rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><p>Opportunity to continue as a brand ambassador for educational change and impact</p></div>
       </div>
     </div>
     <div class="next"><a href="#eligibility">See who can apply <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
@@ -290,9 +273,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <h2 class="h2">Who Can <em>Apply?</em></h2>
       </div>
       <ul class="checks">
-        <li class="rv"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><p>In-service teachers from recognised <strong>government, aided, and private schools</strong> across India.</p></li>
-        <li class="rv d1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><p>Submissions accepted in major Indian languages.</p></li>
-        <li class="rv d2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><p>At least 5 years of teaching experience.</p></li>
+        <li class="rv"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><p>In-service teachers from recognised <strong>government, aided, and private schools</strong> across India</p></li>
+        <li class="rv d1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><p>Teachers with a minimum of <strong>5 years</strong> of teaching experience</p></li>
+        <li class="rv d2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><p>Educators teaching in any major Indian language</p></li>
       </ul>
     </div>
     <div class="next"><a href="#criteria">What are we looking for? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
@@ -304,103 +287,63 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <div class="head rv">
         <div class="eyebrow">04 · Evaluation</div>
         <h2 class="h2">What Are We <em>Looking For?</em></h2>
+        <p class="lead">We are seeking educators who have demonstrated:</p>
       </div>
       <div class="steps">
-        <article class="step rv"><span class="n" aria-hidden="true">01</span><h3>Impact on student learning and other outcomes</h3><p>Lasting, proven growth in student achievement and future opportunities.</p></article>
-        <article class="step rv d1"><span class="n" aria-hidden="true">02</span><h3>Innovative teaching practices</h3><p>New or adapted methods that measurably solve real classroom challenges.</p></article>
-        <article class="step rv"><span class="n" aria-hidden="true">03</span><h3>Effective integration of technology</h3><p>Purposeful use of digital tools to enhance instruction and student engagement.</p></article>
-        <article class="step rv d1"><span class="n" aria-hidden="true">04</span><h3>Meaningful impact in schools and communities</h3><p>Positive, lasting change that extends beyond the classroom into the wider community.</p></article>
+        <article class="step rv"><span class="n" aria-hidden="true">01</span><h3>Impact on student learning and other developmental outcomes</h3></article>
+        <article class="step rv d1"><span class="n" aria-hidden="true">02</span><h3>Innovative and effective teaching practices</h3></article>
+        <article class="step rv"><span class="n" aria-hidden="true">03</span><h3>Meaningful integration of technology to enhance learning</h3></article>
+        <article class="step rv d1"><span class="n" aria-hidden="true">04</span><h3>Positive impact within schools and communities</h3></article>
       </div>
     </div>
+    <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
   </section>
-
-  <div class="guide">
-    <div class="wrap">
-      <div class="strip rv">
-        <p>For detailed eligibility criteria, evaluation parameters, and application guidelines</p>
-        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Click Here<span class="sr"> to view detailed eligibility criteria and application guidelines</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-      </div>
-    </div>
-  </div>
 
   <!-- 5 -->
-  <section id="awards" class="awards">
-    <div class="wrap">
-      <div class="head rv">
-        <div class="eyebrow">05 · Rewards</div>
-        <h2 class="h2">Awards &amp; <em>Recognition</em></h2>
-      </div>
-      <div class="prizes">
-        <div class="prize gold rv">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
-          <div class="amt">₹10 Lakh</div>
-          <div class="who">National Winner</div>
-        </div>
-        <div class="prize rv d1">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
-          <div class="amt">₹5 Lakh</div>
-          <div class="who">Each four Regional Winners</div>
-        </div>
-      </div>
-      <div class="perks">
-        <div class="perk top rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6.5 7 .8-5.2 4.7 1.5 7L12 17.5 5.7 21l1.5-7L2 9.3l7-.8z"/></svg></span><p>National-level recognition at the prestigious CONVOKE platform</p></div>
-        <div class="perk rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></span><p>A fully-covered international exposure visit to Bhutan to study the Bhutan Baccalaureate</p></div>
-        <div class="perk rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><p>Opportunities for mentorship, thought leadership, publication, and engagement through TheTeacherApp</p></div>
-        <div class="perk rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"/></svg></span><p>Opportunity to continue as a brand ambassador of change and impact</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6 -->
-  <section id="apply" class="apply">
-    <div class="wrap">
+  <section id="about" class="about">
+    <div class="wrap grid">
       <div class="rv">
-        <div class="eyebrow">06 · Apply now</div>
-        <h2 class="h2">Apply through TheTeacherApp</h2>
+        <div class="eyebrow">05 · About the awards</div>
+        <h2 class="h2">Recognising India’s Finest <em>Educators</em></h2>
       </div>
-      <div class="stores rv d1">
-        <a class="store" href="#" target="_blank" rel="noopener" aria-label="Get it on Google Play">
-          <svg viewBox="0 0 24 24"><path fill="#00d7fe" d="M3.6 2.2 13.4 12l-9.8 9.8c-.4-.2-.6-.7-.6-1.2V3.4c0-.5.2-1 .6-1.2z"/><path fill="#ffce00" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c1-.6 1-1.8 0-2.4z"/><path fill="#ff3a44" d="M13.4 12 3.6 21.8c.4.3 1 .3 1.6 0l11.6-6.4z"/><path fill="#00f076" d="M3.6 2.2c.4-.3 1-.3 1.6 0l11.6 6.4-3.4 3.4z"/></svg>
-          <span><small>GET IT ON</small><b>Google Play</b></span></a>
-        <a class="store" href="#" target="_blank" rel="noopener" aria-label="Download on the App Store">
-          <svg viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9s-2-.9-3.4-.9C5.9 6.8 4.3 7.8 3.4 9.4c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.6 1-1.4 1.4-2.9 1.4-3-.1 0-2.7-1-2.7-4.3zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>
-          <span><small>Download on the</small><b>App Store</b></span></a>
-        <a class="store" href="#" target="_blank" rel="noopener" aria-label="Explore web version">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.8 3 2.8 17 0 20M12 2c-2.8 3-2.8 17 0 20"/></svg>
-          <span><small>Explore</small><b>web version</b></span></a>
+      <div class="rv d1">
+        <p class="lead">Every day, exceptional teachers are shaping lives, inspiring students, and creating meaningful change in classrooms and communities across India. If you are one of them, this is your opportunity to gain national recognition for your impact. If you know a teacher whose work deserves to be celebrated, nominate them today. The Bharti Airtel Foundation Teacher Excellence Awards honour educators who are transforming learning and helping shape the future of India.</p>
+        <div class="ctas" id="final-cta">
+          <a class="btn btn-red" href="#" data-cta="apply">Apply Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#" data-cta="nominate">Nominate a Teacher <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- 7 -->
-  <section class="closing" id="closing">
-    <div class="wrap rv">
-      <svg class="q" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4z"/></svg>
-      <blockquote>Great teachers are found in every classroom, every community, and every corner of India. <span>Let's come together to identify, celebrate, and learn from the educators who are shaping the nation's future.</span></blockquote>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
+    <div class="contact">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+      <p>For more information, please contact:<a href="mailto:bhartiairtelteacherexcellence@outlook.com">bhartiairtelteacherexcellence@outlook.com</a></p>
+    </div>
     <div class="ey"><img src="assets/ey.webp" width="44" height="44" alt="EY" loading="lazy"><div><small>In association with</small>Process Advisors</div></div>
-    <a class="mail" href="mailto:xyz@email."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>For any queries, contact xyz@email.</a>
   </div>
 </footer>
 
 <div class="dock" id="dock" role="complementary" aria-label="Apply shortcut">
-  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">Keep scrolling — 6 sections to go</span></p>
-  <a class="btn btn-red" href="#apply">Apply now</a>
+  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">5 sections · takes 2 minutes</span></p>
+  <a class="btn btn-red" href="#" data-cta="apply">Apply Now</a>
 </div>
 
 <script>
 (function(){
+  // Set the real form URLs here — every Apply / Nominate button on the page uses them.
+  var LINKS={apply:'#',nominate:'#'};
+  [].forEach.call(document.querySelectorAll('[data-cta]'),function(a){var u=LINKS[a.getAttribute('data-cta')];if(u&&u!=='#'){a.href=u;a.target='_blank';a.rel='noopener'}});
+
   var bar=document.getElementById('bar'),dock=document.getElementById('dock'),txt=document.getElementById('dockTxt');
-  var ids=['about','participate','eligibility','criteria','awards','apply'];
+  var ids=['participate','awards','eligibility','criteria','about'],n=ids.length;
   var secs=ids.map(function(i){return document.getElementById(i)});
   var links=[].slice.call(document.querySelectorAll('#rail a'));
-  var hero=document.querySelector('.hero'),apply=document.getElementById('apply'),ticking=false;
+  var first=secs[0],finalCta=document.getElementById('final-cta'),ticking=false;
+  function vis(el){var r=el.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}
   function update(){
     ticking=false;
     var h=document.documentElement,max=h.scrollHeight-innerHeight,y=scrollY||h.scrollTop;
@@ -408,12 +351,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var cur=-1,mid=y+innerHeight*0.4;
     secs.forEach(function(s,i){if(s.offsetTop<=mid)cur=i});
     links.forEach(function(a,i){a.classList.toggle('on',i===cur);a.classList.toggle('done',i<cur)});
-    var left=ids.length-1-cur;
-    txt.textContent=cur<0?'6 sections · takes 2 minutes':left>0?'Section '+(cur+1)+' of 6 · '+left+' to go':'You’re all set — apply now';
-    var ar=apply.getBoundingClientRect();
-    var inApply=ar.top<innerHeight&&ar.bottom>0;
-    dock.classList.toggle('show',hero.getBoundingClientRect().bottom<0);
-    dock.classList.toggle('hide',inApply);
+    var left=n-1-cur;
+    txt.textContent=cur<0?n+' sections · takes 2 minutes':left>0?'Section '+(cur+1)+' of '+n+' · '+left+' to go':'You’re all set — apply now';
+    dock.classList.toggle('show',first.getBoundingClientRect().bottom<0);
+    dock.classList.toggle('hide',vis(finalCta));
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
   addEventListener('resize',update);update();
