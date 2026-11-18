@@ -6,11 +6,13 @@
 <title>Teacher Excellence Awards 2027 | Bharti Airtel Foundation</title>
 <meta name="description" content="Bharti Airtel Foundation Teacher Excellence Awards 2027 – Shaping Lives. Celebrating exceptional educators across India. Apply or nominate through TheTeacherApp.">
 <meta name="theme-color" content="#e40000">
+<link rel="canonical" href="https://bharti-airtel-foundation-award-lp.pages.dev/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e40000'/%3E%3Cpath d='M10 22l6-12 6 12M12.5 17h7' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preload" as="image" type="image/webp" href="assets/hero-mobile.webp" media="(max-width: 699px)">
 <link rel="preload" as="image" type="image/webp" imagesrcset="assets/hero-1000.webp 1000w, assets/hero-1600.webp 1600w, assets/hero-2400.webp 2400w" imagesizes="100vw" media="(min-width: 700px)">
 <style>
 :root{
-  --red:#e40000;--red-d:#b80000;--ink:#14141c;--ink-2:#4a4a57;--muted:#767684;
+  --red:#e40000;--red-d:#b80000;--ink:#14141c;--ink-2:#4a4a57;--muted:#62626f;
   --bg:#fff;--soft:#f6f6f9;--line:#e7e7ee;--tint:#fdeeee;--cream:#fff6ec;
   --r:18px;--max:1140px;
   --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -141,7 +143,7 @@ div.card:hover{transform:none;box-shadow:0 18px 40px rgba(20,20,28,.08)}
 .amt{font-size:clamp(44px,6vw,64px);font-weight:850;letter-spacing:-.03em;line-height:1.05;color:var(--red)}
 .prize.gold .amt{color:#fff}
 .prize .who{margin-top:8px;font-size:17px;font-weight:600;color:var(--muted)}
-.prize.gold .who{color:#ffdcdc}
+.prize.gold .who{color:#fff}
 .perks{margin-top:22px;display:grid;gap:14px}
 @media (min-width:760px){.perks{grid-template-columns:1fr 1fr}}
 .perk{display:flex;gap:16px;align-items:flex-start;padding:22px;border-radius:16px;background:var(--soft)}
@@ -192,12 +194,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .dock.hide{transform:translateY(140%)}
 
 /* Reveal */
-.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.js .rv.in{opacity:1;transform:none}
-.js .d1{transition-delay:.08s}.js .d2{transition-delay:.16s}.js .d3{transition-delay:.24s}
+.rv{transition:opacity .7s ease,transform .7s ease}
+.rv.pre{opacity:0;transform:translateY(22px)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .js .rv{opacity:1;transform:none;transition:none}
+  .rv,.rv.pre{opacity:1;transform:none;transition:none}
   .next svg{animation:none}
   .step::before{transition:none}
 }
@@ -209,7 +211,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .hero-bar .btn{width:100%;justify-content:center}
 }
 </style>
-<script>document.documentElement.className='js'</script>
 </head>
 <body>
 <div class="progress" aria-hidden="true"><span id="bar"></span></div>
@@ -317,7 +318,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="wrap">
       <div class="strip rv">
         <p>For detailed eligibility criteria, evaluation parameters, and application guidelines</p>
-        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Click Here
+        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Click Here<span class="sr"> to view detailed eligibility criteria and application guidelines</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
       </div>
     </div>
@@ -416,11 +417,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
   addEventListener('resize',update);update();
-  var els=document.querySelectorAll('.rv,.step');
+  // Only animate content that starts below the fold, so the first screen (and LCP) paints immediately.
+  var els=[].slice.call(document.querySelectorAll('.rv,.step')),vh=innerHeight;
+  function show(el){el.classList.remove('pre');el.classList.add('in')}
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:.12});
-    els.forEach(function(el){io.observe(el)});
-  }else{els.forEach(function(el){el.classList.add('in')})}
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:.12});
+    els.forEach(function(el){if(el.getBoundingClientRect().top<vh){show(el)}else{if(el.classList.contains('rv'))el.classList.add('pre');io.observe(el)}});
+  }else{els.forEach(show)}
 })();
 </script>
 </body>
