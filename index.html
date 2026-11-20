@@ -57,6 +57,17 @@ p{margin:0}
 .rail a.done i{background:#ffb3b3;border-color:#ffb3b3}
 @media (min-width:1280px){.rail{display:flex}}
 
+/* Top nav */
+.topnav{position:sticky;top:0;z-index:58;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);-webkit-backdrop-filter:saturate(1.4) blur(8px);backdrop-filter:saturate(1.4) blur(8px)}
+.topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.topnav .logo{display:flex;align-items:center}
+.topnav .logo img{height:52px;width:auto}
+.topnav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:6px}
+.topnav ul a{display:block;text-decoration:none;font-size:15px;font-weight:600;color:var(--ink);padding:8px 14px;border-radius:999px;transition:background .15s,color .15s}
+.topnav ul a:hover{background:var(--tint);color:var(--red)}
+.topnav ul a[aria-current="page"]{color:var(--red);background:var(--tint)}
+@media (max-width:420px){.topnav .wrap{height:60px}.topnav .logo img{height:44px}.topnav ul a{font-size:14px;padding:8px 10px}}
+
 /* Hero */
 .hero{position:relative;background:#fafafa}
 .hero picture img{width:100%;aspect-ratio:707/500}
@@ -74,7 +85,7 @@ p{margin:0}
 .btn svg{width:18px;height:18px}
 
 /* Section shell */
-section{padding:44px 0;scroll-margin-top:10px}
+section{padding:44px 0;scroll-margin-top:68px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
 .eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
 .h2{font-size:clamp(28px,4.2vw,44px);font-weight:800}
@@ -213,6 +224,10 @@ section{padding:44px 0;scroll-margin-top:10px}
 /* Footer */
 footer{border-top:1px solid var(--line);padding:30px 0 110px}
 footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.legal{width:100%;display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.legal a{color:var(--ink-2);text-decoration:none;font-weight:600}
+.legal a:hover{color:var(--red)}
+.legal span{margin-right:auto}
 .ey{display:flex;align-items:center;gap:14px;font-weight:700;font-size:18px}
 .ey img{width:44px;height:44px}
 .ey small{display:block;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
@@ -256,6 +271,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </head>
 <body>
 <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+<nav class="topnav" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Bharti Airtel Foundation – Teacher Excellence Awards home"><img src="assets/baf-logo.webp" width="134" height="120" alt="Bharti Airtel Foundation"></a>
+    <ul>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/terms">Terms &amp; Conditions</a></li>
+    </ul>
+  </div>
+</nav>
 
 <nav aria-label="Page sections">
   <ul class="rail" id="rail">
@@ -489,6 +513,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <p>For more information, please contact:<a href="mailto:bhartiairtelteacherexcellence@outlook.com">bhartiairtelteacherexcellence@outlook.com</a></p>
     </div>
     <div class="ey"><img src="assets/ey.webp" width="44" height="44" alt="EY" loading="lazy"><div><small>In association with</small>Process Advisors</div></div>
+    <div class="legal"><span>© 2026 Bharti Airtel Foundation</span><a href="/faq">FAQ</a><a href="/terms">Terms &amp; Conditions</a></div>
   </div>
 </footer>
 
