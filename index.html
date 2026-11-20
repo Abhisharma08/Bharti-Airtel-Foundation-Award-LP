@@ -105,7 +105,6 @@ section{padding:84px 0;scroll-margin-top:10px}
 /* 5. About */
 .about .grid{display:grid;gap:28px}
 .about .h2{max-width:14ch}
-.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 @media (min-width:900px){.about .grid{grid-template-columns:5fr 7fr;gap:64px;align-items:start}}
 
 /* 3. Eligibility */
@@ -235,7 +234,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .card{padding:24px 22px}
   .step{padding:22px 20px}
   .step .n{font-size:40px}
-  .ctas .btn{flex:1 1 100%;justify-content:center}
   .hero-bar .btn{width:100%;justify-content:center}
 }
 </style>
@@ -383,10 +381,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </div>
       <div class="rv d1">
         <p class="lead">Every day, exceptional teachers are shaping lives, inspiring students, and creating meaningful change in classrooms and communities across India. If you are one of them, this is your opportunity to gain national recognition for your impact. If you know a teacher whose work deserves to be celebrated, nominate them today. The Bharti Airtel Foundation Teacher Excellence Awards honour educators who are transforming learning and helping shape the future of India.</p>
-        <div class="ctas" id="final-cta">
-          <a class="btn btn-red" href="#" data-cta="apply">Apply Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn-line" href="#" data-cta="nominate">Nominate a Teacher <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
       </div>
     </div>
   </section>
@@ -458,7 +452,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   var ids=['participate','awards','eligibility','criteria','how','about','apply'],n=ids.length;
   var secs=ids.map(function(i){return document.getElementById(i)});
   var links=[].slice.call(document.querySelectorAll('#rail a'));
-  var first=secs[0],finalCta=document.getElementById('final-cta'),ticking=false;
+  var first=secs[0],applySec=document.getElementById('apply'),ticking=false;
   function vis(el){var r=el.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}
   function update(){
     ticking=false;
@@ -470,7 +464,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var left=n-1-cur;
     txt.textContent=cur<0?n+' sections · takes 2 minutes':left>0?'Section '+(cur+1)+' of '+n+' · '+left+' to go':'You’re all set — apply now';
     dock.classList.toggle('show',first.getBoundingClientRect().bottom<0);
-    dock.classList.toggle('hide',vis(finalCta)||vis(document.getElementById('apply')));
+    dock.classList.toggle('hide',vis(applySec));
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
   addEventListener('resize',update);update();
