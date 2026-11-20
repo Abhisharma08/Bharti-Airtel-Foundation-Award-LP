@@ -162,17 +162,18 @@ section{padding:44px 0;scroll-margin-top:68px}
 .jury{background:#fff}
 .jury .head{text-align:center;max-width:720px;margin:0 auto 36px}
 .jury .head .lead{margin-top:14px}
-.panel{list-style:none;margin:0 auto;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:40px 28px;max-width:1040px}
+.panel{list-style:none;margin:0 auto;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:40px 28px;max-width:960px}
 .member{flex:0 0 calc(50% - 14px);text-align:center}
 @media (min-width:640px){.member{flex-basis:calc(33.333% - 19px)}}
-@media (min-width:960px){.member{flex-basis:calc(25% - 21px)}}
 .member .ph{width:clamp(120px,16vw,160px);aspect-ratio:1;margin:0 auto 18px;border-radius:50%;padding:5px;background:linear-gradient(135deg,var(--red),#ff7a5c);transition:transform .25s}
 .member:hover .ph{transform:translateY(-4px)}
 .member .ph img,.member .ph .ph-empty{width:100%;height:100%;border-radius:50%;border:4px solid #fff;object-fit:cover;background:var(--soft);display:block}
 .member .ph-empty{display:grid!important;place-items:center;color:#c4c4cf}
-.member .ph-empty svg{width:55%;height:55%}
+.member .ph-empty{font-size:clamp(28px,3.4vw,40px);font-weight:800;letter-spacing:.02em;color:#c9c9d3}
+.member .ph{position:relative}
+.member .role{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);white-space:nowrap;box-shadow:0 4px 12px rgba(212,0,0,.3);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--red);padding:4px 12px;border-radius:999px}
 .member h3{font-size:18px;font-weight:750;line-height:1.3}
-.member p{margin-top:4px;font-size:15px;color:var(--muted);line-height:1.45}
+.member p{margin-top:6px;font-size:15px;color:var(--muted);line-height:1.45;max-width:30ch;margin-left:auto;margin-right:auto}
 
 /* 5. Awards */
 .awards .head{text-align:center;max-width:720px;margin:0 auto 32px}
@@ -289,7 +290,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <li><a href="#eligibility"><b>Who can apply</b><i></i></a></li>
     <li><a href="#criteria"><b>What we look for</b><i></i></a></li>
     <li><a href="#how"><b>How to apply</b><i></i></a></li>
-    <li><a href="#jury"><b>Jury</b><i></i></a></li>
+    <li><a href="#jury"><b>National Jury</b><i></i></a></li>
     <li><a href="#about"><b>About</b><i></i></a></li>
     <li><a href="#apply"><b>Apply</b><i></i></a></li>
   </ul>
@@ -411,53 +412,48 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <button type="button" aria-label="Play the How to Apply video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap">How to Apply</span></button>
       </div>
     </div>
-    <div class="next"><a href="#jury">Meet the jury <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
+    <div class="next"><a href="#jury">Meet the National Jury <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
   </section>
 
   <!-- 6 -->
   <section id="jury" class="jury">
     <div class="wrap">
       <div class="head rv">
-        <div class="eyebrow">06 · The jury</div>
-        <h2 class="h2">Meet the <em>Jury</em></h2>
+        <div class="eyebrow">06 · National jury</div>
+        <h2 class="h2">National <em>Jury</em></h2>
       </div>
       <!-- To add a photo: replace the <span class="ph-empty">…</span> with
            <img src="assets/jury/name.webp" width="160" height="160" alt="Full name" loading="lazy" decoding="async"> -->
       <ul class="panel">
+        <li class="member rv">
+          <div class="ph"><span class="ph-empty" aria-hidden="true">RM</span><span class="role">Chairman</span></div>
+          <h3>Rakesh B Mittal</h3>
+          <p>Co-Chairman, Bharti Airtel Foundation</p>
+        </li>
         <li class="member rv d1">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 1</h3>
-          <p>Designation</p>
+          <div class="ph"><span class="ph-empty" aria-hidden="true">AK</span></div>
+          <h3>Arun Kapur</h3>
+          <p>Director, The Royal Academy, Bhutan, Chairman Pallavan</p>
         </li>
         <li class="member rv">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 2</h3>
-          <p>Designation</p>
+          <div class="ph"><span class="ph-empty" aria-hidden="true">VR</span></div>
+          <h3>V V Ranganathan</h3>
+          <p>Ex E&amp;Y, Bharti BOG</p>
         </li>
         <li class="member rv d1">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 3</h3>
-          <p>Designation</p>
+          <div class="ph"><span class="ph-empty" aria-hidden="true">KM</span></div>
+          <h3>Kalpana Morparia</h3>
+          <p>CEO South &amp; Southeast Asia, JPMorgan, &amp; ICICI Bank</p>
         </li>
         <li class="member rv">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 4</h3>
-          <p>Designation</p>
+          <div class="ph"><span class="ph-empty" aria-hidden="true">RB</span></div>
+          <h3>Rukmini Banerji</h3>
+          <p>Fmr CEO &amp; Senior Advisor, Pratham Education Foundation</p>
         </li>
         <li class="member rv d1">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 5</h3>
-          <p>Designation</p>
-        </li>
-        <li class="member rv">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 6</h3>
-          <p>Designation</p>
-        </li>
-        <li class="member rv d1">
-          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
-          <h3>Jury Member 7</h3>
-          <p>Designation</p>
+          <div class="ph"><span class="ph-empty" aria-hidden="true">VS</span></div>
+          <h3>Vrinda Swarup</h3>
+          <p>Fmr IAS</p>
         </li>
       </ul>
     </div>
