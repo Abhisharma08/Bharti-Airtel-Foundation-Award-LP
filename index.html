@@ -118,7 +118,7 @@ section{padding:84px 0;scroll-margin-top:10px}
 
 /* 4. Criteria */
 .elig{background:var(--soft)}
-.about{background:#fff}
+.about{background:var(--soft)}
 .criteria{background:#fff}
 .criteria .head{max-width:720px;margin-bottom:40px}
 .criteria .head .lead{margin-top:14px}
@@ -146,6 +146,22 @@ section{padding:84px 0;scroll-margin-top:10px}
 .video button:disabled{cursor:default}
 .video button:disabled .play{background:rgba(255,255,255,.2);box-shadow:none}
 @media (max-width:520px){.video{border-radius:16px}.video .play{width:64px;height:64px}.video .play svg{width:24px;height:24px}.video .cap{left:16px;bottom:14px;font-size:14px}}
+
+/* Jury */
+.jury{background:#fff}
+.jury .head{text-align:center;max-width:720px;margin:0 auto 48px}
+.jury .head .lead{margin-top:14px}
+.panel{list-style:none;margin:0 auto;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:40px 28px;max-width:1040px}
+.member{flex:0 0 calc(50% - 14px);text-align:center}
+@media (min-width:640px){.member{flex-basis:calc(33.333% - 19px)}}
+@media (min-width:960px){.member{flex-basis:calc(25% - 21px)}}
+.member .ph{width:clamp(120px,16vw,160px);aspect-ratio:1;margin:0 auto 18px;border-radius:50%;padding:5px;background:linear-gradient(135deg,var(--red),#ff7a5c);transition:transform .25s}
+.member:hover .ph{transform:translateY(-4px)}
+.member .ph img,.member .ph .ph-empty{width:100%;height:100%;border-radius:50%;border:4px solid #fff;object-fit:cover;background:var(--soft);display:block}
+.member .ph-empty{display:grid!important;place-items:center;color:#c4c4cf}
+.member .ph-empty svg{width:55%;height:55%}
+.member h3{font-size:18px;font-weight:750;line-height:1.3}
+.member p{margin-top:4px;font-size:15px;color:var(--muted);line-height:1.45}
 
 /* 5. Awards */
 .awards .head{text-align:center;max-width:720px;margin:0 auto 44px}
@@ -248,6 +264,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <li><a href="#eligibility"><b>Who can apply</b><i></i></a></li>
     <li><a href="#criteria"><b>What we look for</b><i></i></a></li>
     <li><a href="#how"><b>How to apply</b><i></i></a></li>
+    <li><a href="#jury"><b>Jury</b><i></i></a></li>
     <li><a href="#about"><b>About</b><i></i></a></li>
     <li><a href="#apply"><b>Apply</b><i></i></a></li>
   </ul>
@@ -369,14 +386,64 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <button type="button" aria-label="Play the How to Apply video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap">How to Apply</span></button>
       </div>
     </div>
-    <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
+    <div class="next"><a href="#jury">Meet the jury <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
   </section>
 
   <!-- 6 -->
+  <section id="jury" class="jury">
+    <div class="wrap">
+      <div class="head rv">
+        <div class="eyebrow">06 · The jury</div>
+        <h2 class="h2">Meet the <em>Jury</em></h2>
+      </div>
+      <!-- To add a photo: replace the <span class="ph-empty">…</span> with
+           <img src="assets/jury/name.webp" width="160" height="160" alt="Full name" loading="lazy" decoding="async"> -->
+      <ul class="panel">
+        <li class="member rv d1">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 1</h3>
+          <p>Designation</p>
+        </li>
+        <li class="member rv">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 2</h3>
+          <p>Designation</p>
+        </li>
+        <li class="member rv d1">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 3</h3>
+          <p>Designation</p>
+        </li>
+        <li class="member rv">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 4</h3>
+          <p>Designation</p>
+        </li>
+        <li class="member rv d1">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 5</h3>
+          <p>Designation</p>
+        </li>
+        <li class="member rv">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 6</h3>
+          <p>Designation</p>
+        </li>
+        <li class="member rv d1">
+          <div class="ph"><span class="ph-empty"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4.2"/><path d="M3.5 21c.9-4.4 4.3-7 8.5-7s7.6 2.6 8.5 7z"/></svg></span></div>
+          <h3>Jury Member 7</h3>
+          <p>Designation</p>
+        </li>
+      </ul>
+    </div>
+    <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
+  </section>
+
+  <!-- 7 -->
   <section id="about" class="about">
     <div class="wrap grid">
       <div class="rv">
-        <div class="eyebrow">06 · About the awards</div>
+        <div class="eyebrow">07 · About the awards</div>
         <h2 class="h2">Recognising India’s Finest <em>Educators</em></h2>
       </div>
       <div class="rv d1">
@@ -385,11 +452,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     </div>
   </section>
 
-  <!-- 7 -->
+  <!-- 8 -->
   <section id="apply" class="apply">
     <div class="wrap">
       <div class="rv">
-        <div class="eyebrow">07 · Apply now</div>
+        <div class="eyebrow">08 · Apply now</div>
         <h2 class="h2 apply-h">Apply through <span class="tta"><img src="assets/theteacherapp.webp" width="327" height="96" alt="TheTeacherApp" loading="lazy" decoding="async"></span></h2>
       </div>
       <div class="stores rv d1">
@@ -406,7 +473,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     </div>
   </section>
 
-  <!-- 8 -->
+  <!-- 9 -->
   <section class="closing" id="closing">
     <div class="wrap rv">
       <svg class="q" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4z"/></svg>
@@ -426,7 +493,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </footer>
 
 <div class="dock" id="dock" role="complementary" aria-label="Apply shortcut">
-  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">7 sections · takes 2 minutes</span></p>
+  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">8 sections · takes 2 minutes</span></p>
   <a class="btn btn-red" href="#" data-cta="apply">Apply Now</a>
 </div>
 
@@ -449,7 +516,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   [].forEach.call(document.querySelectorAll('[data-cta]'),function(a){var u=LINKS[a.getAttribute('data-cta')];if(u&&u!=='#'){a.href=u;a.target='_blank';a.rel='noopener'}});
 
   var bar=document.getElementById('bar'),dock=document.getElementById('dock'),txt=document.getElementById('dockTxt');
-  var ids=['participate','awards','eligibility','criteria','how','about','apply'],n=ids.length;
+  var ids=['participate','awards','eligibility','criteria','how','jury','about','apply'],n=ids.length;
   var secs=ids.map(function(i){return document.getElementById(i)});
   var links=[].slice.call(document.querySelectorAll('#rail a'));
   var first=secs[0],applySec=document.getElementById('apply'),ticking=false;
