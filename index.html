@@ -118,7 +118,8 @@ section{padding:84px 0;scroll-margin-top:10px}
 .tick svg{width:16px;height:16px}
 
 /* 4. Criteria */
-.elig,.about{background:var(--soft)}
+.elig{background:var(--soft)}
+.about{background:#fff}
 .criteria{background:#fff}
 .criteria .head{max-width:720px;margin-bottom:40px}
 .criteria .head .lead{margin-top:14px}
@@ -131,13 +132,21 @@ section{padding:84px 0;scroll-margin-top:10px}
 .step::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .6s ease .2s}
 .step.in::before{transform:none}
 
-/* Guidelines strip */
-.guide{padding:0 0 84px;background:#fff}
-.guide .next{margin-top:48px}
-.guide .wrap{padding-top:0;padding-bottom:0}
-.strip{display:flex;flex-direction:column;gap:18px;align-items:flex-start;justify-content:space-between;background:linear-gradient(100deg,var(--cream),#fbd6d3);border-radius:22px;padding:30px 28px}
-.strip p{font-size:clamp(17px,2vw,21px);font-weight:700;max-width:40ch}
-@media (min-width:760px){.strip{flex-direction:row;align-items:center;padding:36px 44px}}
+/* How to apply (video) */
+.how{background:var(--soft)}
+.how .head{text-align:center;max-width:720px;margin:0 auto 36px}
+.how .head .lead{margin-top:14px}
+.video{position:relative;max-width:960px;margin:0 auto;aspect-ratio:16/9;border-radius:22px;overflow:hidden;background:var(--ink);box-shadow:0 24px 60px rgba(20,20,28,.16)}
+.video img,.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.video img{object-position:left center}
+.video button{position:absolute;inset:0;width:100%;border:0;padding:0;cursor:pointer;background:linear-gradient(180deg,rgba(20,20,28,.05),rgba(20,20,28,.55));display:grid;place-items:center;color:#fff;font:inherit}
+.video .play{width:84px;height:84px;border-radius:50%;background:var(--red);display:grid;place-items:center;box-shadow:0 0 0 12px rgba(212,0,0,.22);transition:transform .2s,box-shadow .2s}
+.video .play svg{width:32px;height:32px;margin-left:5px}
+.video button:hover .play{transform:scale(1.06);box-shadow:0 0 0 18px rgba(212,0,0,.2)}
+.video .cap{position:absolute;left:24px;bottom:20px;font-weight:700;font-size:16px;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.video button:disabled{cursor:default}
+.video button:disabled .play{background:rgba(255,255,255,.2);box-shadow:none}
+@media (max-width:520px){.video{border-radius:16px}.video .play{width:64px;height:64px}.video .play svg{width:24px;height:24px}.video .cap{left:16px;bottom:14px;font-size:14px}}
 
 /* 5. Awards */
 .awards .head{text-align:center;max-width:720px;margin:0 auto 44px}
@@ -237,6 +246,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <li><a href="#awards"><b>Awards</b><i></i></a></li>
     <li><a href="#eligibility"><b>Who can apply</b><i></i></a></li>
     <li><a href="#criteria"><b>What we look for</b><i></i></a></li>
+    <li><a href="#how"><b>How to apply</b><i></i></a></li>
     <li><a href="#about"><b>About</b><i></i></a></li>
     <li><a href="#apply"><b>Apply</b><i></i></a></li>
   </ul>
@@ -342,24 +352,30 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <article class="step rv d1"><span class="n" aria-hidden="true">04</span><h3>Positive impact within schools and communities</h3></article>
       </div>
     </div>
+    <div class="next"><a href="#how">How to apply <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
   </section>
 
-  <div class="guide">
+  <!-- 5 -->
+  <section id="how" class="how">
     <div class="wrap">
-      <div class="strip rv">
-        <p>For detailed eligibility criteria, evaluation parameters, and application guidelines</p>
-        <a class="btn btn-line" href="#" target="_blank" rel="noopener">Click Here<span class="sr"> to view detailed eligibility criteria and application guidelines</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      <div class="head rv">
+        <div class="eyebrow">05 · Step by step</div>
+        <h2 class="h2">How to <em>Apply</em></h2>
+        <p class="lead">Watch this short video to see how to apply.</p>
+      </div>
+      <div class="video rv" id="video">
+        <img src="assets/og-image.jpg" alt="" width="1200" height="630" loading="lazy" decoding="async">
+        <button type="button" aria-label="Play the How to Apply video"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span><span class="cap">How to Apply</span></button>
       </div>
     </div>
-      <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
-  </div>
+    <div class="next"><a href="#about">About the awards <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></div>
+  </section>
 
-  <!-- 5 -->
+  <!-- 6 -->
   <section id="about" class="about">
     <div class="wrap grid">
       <div class="rv">
-        <div class="eyebrow">05 · About the awards</div>
+        <div class="eyebrow">06 · About the awards</div>
         <h2 class="h2">Recognising India’s Finest <em>Educators</em></h2>
       </div>
       <div class="rv d1">
@@ -372,11 +388,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     </div>
   </section>
 
-  <!-- 6 -->
+  <!-- 7 -->
   <section id="apply" class="apply">
     <div class="wrap">
       <div class="rv">
-        <div class="eyebrow">06 · Apply now</div>
+        <div class="eyebrow">07 · Apply now</div>
         <h2 class="h2">Apply through TheTeacherApp</h2>
       </div>
       <div class="stores rv d1">
@@ -393,7 +409,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     </div>
   </section>
 
-  <!-- 7 -->
+  <!-- 8 -->
   <section class="closing" id="closing">
     <div class="wrap rv">
       <svg class="q" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4z"/></svg>
@@ -413,7 +429,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </footer>
 
 <div class="dock" id="dock" role="complementary" aria-label="Apply shortcut">
-  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">6 sections · takes 2 minutes</span></p>
+  <p><b>Teacher Excellence Awards 2027</b><span id="dockTxt">7 sections · takes 2 minutes</span></p>
   <a class="btn btn-red" href="#" data-cta="apply">Apply Now</a>
 </div>
 
@@ -421,10 +437,22 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 (function(){
   // Set the real form URLs here — every Apply / Nominate button on the page uses them.
   var LINKS={apply:'#',nominate:'#'};
+  // How to Apply video: set ONE of these. youtube = the video ID (e.g. 'dQw4w9WgXcQ'), mp4 = a file path or URL.
+  var VIDEO={youtube:'',mp4:''};
+  (function(){
+    var box=document.getElementById('video'),btn=box.querySelector('button');
+    if(!VIDEO.youtube&&!VIDEO.mp4){btn.disabled=true;btn.querySelector('.cap').textContent='Video coming soon';return}
+    btn.addEventListener('click',function(){
+      var el;
+      if(VIDEO.youtube){el=document.createElement('iframe');el.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(VIDEO.youtube)+'?autoplay=1&rel=0&playsinline=1';el.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';el.allowFullscreen=true;el.title='How to Apply'}
+      else{el=document.createElement('video');el.src=VIDEO.mp4;el.controls=true;el.autoplay=true;el.playsInline=true}
+      box.innerHTML='';box.appendChild(el);
+    });
+  })();
   [].forEach.call(document.querySelectorAll('[data-cta]'),function(a){var u=LINKS[a.getAttribute('data-cta')];if(u&&u!=='#'){a.href=u;a.target='_blank';a.rel='noopener'}});
 
   var bar=document.getElementById('bar'),dock=document.getElementById('dock'),txt=document.getElementById('dockTxt');
-  var ids=['participate','awards','eligibility','criteria','about','apply'],n=ids.length;
+  var ids=['participate','awards','eligibility','criteria','how','about','apply'],n=ids.length;
   var secs=ids.map(function(i){return document.getElementById(i)});
   var links=[].slice.call(document.querySelectorAll('#rail a'));
   var first=secs[0],finalCta=document.getElementById('final-cta'),ticking=false;
