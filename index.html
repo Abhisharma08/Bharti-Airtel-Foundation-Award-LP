@@ -217,6 +217,16 @@ section{padding:44px 0;scroll-margin-top:68px}
 .store small{display:block;font-size:11px;line-height:1.1;opacity:.85}
 .store b{display:block;font-size:18px;line-height:1.15;font-weight:600}
 
+/* 9. Help strip (FAQ / T&C) */
+.help{padding:32px 0}
+.help .strip{display:flex;flex-direction:column;gap:18px;align-items:flex-start;justify-content:space-between;background:linear-gradient(100deg,var(--cream),#fbd6d3);border-radius:22px;padding:28px}
+.help .strip h2{font-size:clamp(20px,2.4vw,26px);font-weight:800}
+.help .strip p{margin-top:6px;color:var(--ink-2);font-size:16px}
+.help .links{display:flex;flex-wrap:wrap;gap:12px}
+@media (min-width:820px){.help .links{flex:none;flex-wrap:nowrap}}
+@media (min-width:820px){.help .strip{flex-direction:row;align-items:center;padding:34px 44px}}
+@media (max-width:520px){.help .links{width:100%}.help .links .btn{flex:1 1 100%;justify-content:center}}
+
 /* 7. Closing */
 .closing{text-align:center;background:var(--soft)}
 .closing blockquote{margin:0 auto;max-width:900px;font-size:clamp(22px,3.2vw,34px);font-weight:750;line-height:1.35;letter-spacing:-.015em}
@@ -494,6 +504,23 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   </section>
 
   <!-- 9 -->
+  <section class="help" id="help" aria-labelledby="help-h">
+    <div class="wrap">
+      <div class="strip rv">
+        <div>
+          <div class="eyebrow">09 · Need help?</div>
+          <h2 id="help-h">Have questions before you apply?</h2>
+          <p>Read the FAQ and the Terms &amp; Conditions for full details on eligibility, evaluation and the application process.</p>
+        </div>
+        <div class="links">
+          <a class="btn btn-red" href="/faq">FAQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="/terms">Terms &amp; Conditions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 -->
   <section class="closing" id="closing">
     <div class="wrap rv">
       <svg class="q" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4z"/></svg>
