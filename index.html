@@ -235,6 +235,9 @@ section{padding:44px 0;scroll-margin-top:68px}
 .closing{text-align:center;background:var(--soft)}
 .closing blockquote{margin:0 auto;max-width:900px;font-size:clamp(22px,3.2vw,34px);font-weight:750;line-height:1.35;letter-spacing:-.015em}
 .closing blockquote span{color:var(--red)}
+.about-baf{margin-top:34px;padding-top:28px;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:14px}
+.about-baf p{font-size:17px;color:var(--ink-2);font-weight:600}
+@media (max-width:520px){.about-baf .btn{width:100%;justify-content:center}}
 .closing .q{width:44px;height:44px;margin:0 auto 18px;color:var(--red)}
 
 /* Footer */
@@ -251,7 +254,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .contact .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--tint);color:var(--red);display:grid;place-items:center}
 .contact .ic svg{width:22px;height:22px}
 .contact p{font-size:14px;color:var(--muted);min-width:0}
-.contact a{display:block;font-size:16px;font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.contact a{display:block;font-size:16px;font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:break-word}
 .contact a:hover{color:var(--red);text-decoration:underline}
 @media (min-width:900px){footer{padding-bottom:30px}}
 
@@ -529,6 +532,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="wrap rv">
       <svg class="q" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4z"/></svg>
       <blockquote>Great teachers are found in every classroom, every community, and every corner of India. <span>Let's come together to identify, celebrate, and learn from the teachers who are shaping the nation's future.</span></blockquote>
+      <div class="about-baf">
+        <p>Want to know more about Bharti Airtel Foundation?</p>
+        <a class="btn btn-red" href="https://bhartiairtelfoundation.org/" target="_blank" rel="noopener">Visit Bharti Airtel Foundation<span class="sr"> (opens in a new tab)</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
     </div>
   </section>
 </main>
@@ -537,7 +545,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   <div class="wrap">
     <div class="contact">
       <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
-      <p>For more information, please contact:<a href="mailto:TeacherAwards@bhartiairtelfoundation.org">TeacherAwards@bhartiairtelfoundation.org</a></p>
+      <p>For more information, please contact:<a href="mailto:TeacherAwards@bhartiairtelfoundation.org">TeacherAwards@<wbr>bhartiairtelfoundation.org</a></p>
     </div>
     <div class="ey"><img src="assets/ey.webp" width="44" height="44" alt="EY" loading="lazy"><div><small>In association with</small>Process Advisors</div></div>
     <div class="legal"><span>© 2026 Bharti Airtel Foundation</span><a href="/faq">FAQ</a><a href="/terms">Terms &amp; Conditions</a></div>
