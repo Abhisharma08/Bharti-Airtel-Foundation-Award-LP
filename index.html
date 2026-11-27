@@ -199,6 +199,9 @@ section{padding:44px 0;scroll-margin-top:68px}
 .amt small{font-size:.38em;font-weight:700;letter-spacing:0;margin-left:4px}
 .prize .who{margin-top:8px;font-size:17px;font-weight:600;color:var(--muted)}
 .prize.gold .who{color:#fff}
+.amt sup{font-size:.45em;vertical-align:.9em;margin-left:2px}
+.prize .tc{display:inline-block;margin-top:14px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.prize.gold .tc{color:rgba(255,255,255,.9)}
 .perks{margin-top:22px;display:grid;gap:14px}
 @media (min-width:760px){.perks{grid-template-columns:1fr 1fr}}
 .perk{display:flex;gap:16px;align-items:flex-start;padding:22px;border-radius:16px;background:var(--soft)}
@@ -367,13 +370,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <div class="prizes">
         <div class="prize gold rv">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
-          <div class="amt">₹10 lakh</div>
+          <div class="amt">₹1 crore<sup>*</sup></div>
           <div class="who">National Winner</div>
+          <a class="tc" href="/terms">*Terms and Conditions Apply</a>
         </div>
         <div class="prize rv d1">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
-          <div class="amt">₹5 lakh<small>each</small></div>
+          <div class="amt">₹25 lakh<sup>*</sup><small>each</small></div>
           <div class="who">Four Regional Winners</div>
+          <a class="tc" href="/terms">*Terms and Conditions Apply</a>
         </div>
       </div>
       <div class="perks">
@@ -445,14 +450,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </div>
       <ul class="panel">
         <li class="member rv">
-          <div class="ph"><img src="assets/jury/rakesh-b-mittal.webp" width="160" height="160" alt="Rakesh Bharti Mittal" loading="lazy" decoding="async"><span class="role">Chairman</span></div>
-          <h3>Rakesh Bharti Mittal</h3>
-          <p><span class="d">Vice-Chairman, Bharti Enterprises</span><span class="d">Co-Chairman, Bharti Airtel Foundation</span></p>
-        </li>
-        <li class="member rv d1">
-          <div class="ph"><img src="assets/jury/arun-kapur.webp" width="160" height="160" alt="Arun Kapur" loading="lazy" decoding="async"><span class="role role-j">Jury Member</span></div>
+          <div class="ph"><img src="assets/jury/arun-kapur.webp" width="160" height="160" alt="Arun Kapur" loading="lazy" decoding="async"><span class="role">Chairman</span></div>
           <h3>Arun Kapur</h3>
           <p><span class="d">Director, The Royal Academy, Bhutan</span><span class="d">Founder &amp; Chairman, Pallavan Schools</span></p>
+        </li>
+        <li class="member rv d1">
+          <div class="ph"><img src="assets/jury/rakesh-b-mittal.webp" width="160" height="160" alt="Rakesh Bharti Mittal" loading="lazy" decoding="async"><span class="role role-j">Jury Member</span></div>
+          <h3>Rakesh Bharti Mittal</h3>
+          <p><span class="d">Vice-Chairman, Bharti Enterprises</span><span class="d">Co-Chairman, Bharti Airtel Foundation</span></p>
         </li>
         <li class="member rv">
           <div class="ph"><img src="assets/jury/v-v-ranganathan.webp" width="160" height="160" alt="V V Ranganathan" loading="lazy" decoding="async"><span class="role role-j">Jury Member</span></div>
